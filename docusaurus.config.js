@@ -4,7 +4,7 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github")
 const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 
-const theme = require("shiki/themes/nord.json")
+const theme = require("shiki/themes/material-default.json")
 const { remarkCodeHike } = require("@code-hike/mdx")
 
 /** @type {import('@docusaurus/types').Config} */
