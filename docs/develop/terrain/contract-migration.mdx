@@ -17,7 +17,22 @@ There are two key components to a migratable contract.
 
 ## 1. Add `MigrateMsg` to contract
 
+<<<<<<< Updated upstream
 To implement support for `MigrateMsg`, you will need to add the message to `msg.rs`. To do so, navigate to the `msg.rs` file and place the following code just above the `InstantiateMsg` struct.
+=======
+To implement support for `MigrateMsg`, add the following to `msg.rs`: 
+
+   ```rust
+   #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
+   pub struct MigrateMsg {}
+   ```
+
+<Admonition type="tip" icon="💡">
+
+You can place this message anywhere, however; it is usually placed above the `InstantiateMsg` struct.
+
+</Admonition>
+>>>>>>> Stashed changes
 
 ```rust
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
